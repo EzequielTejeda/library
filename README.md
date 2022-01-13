@@ -1,12 +1,10 @@
 # Explicación de uso
  
-Para poder inicializar el proyecto se requiere, en principio, un IDE, en este caso la API fue diseñada en IntelliJ IDEA, pero se puede utilizar cualquiera para poder ejecutarlo. Lo que si es sumamente necesario es tener descargada y configurada la herramienta de Gradle, ya que el proyecto fue desarrollado con ella, en caso contrario el proyecto no podra ser compilado.
-
-Cuando ya tengamos nuestro IDE y Gradle descargado y configurado podremos ejecutar el proyecto. En el caso de IntelliJ IDEA presionando la combinación Mayus+F10 el proyecto sera compilado y cuando en la consola de nuestro IDE se indique que el proyecto fue compilado y ejecutado podremos pasar a probar su parte funcional.
+Para poder compilar y ejecutar este proyecto hace falta tener ciertas consideraciones. Necesitamos tener JDK 11 o superior, la versión 6.8.3 de Gradle o superior y nuestro IDE de preferencia. Si tenemos todo lo antes mencionado, podemos entrar a la aplicación de nuestro IDE, abrir el proyecto y ejecutarlo sin problemas. En cuanto se haya inicializado por completo ya podremos porbar sus funcionalidades.
 
 Como este es un proyecto exclusivamente de desarrollo backend, necesitaremos una aplicación que nos permita realizar pruebas API a través los métodos de petición HTTP. Para esto podemos usar la aplicación de Postman o la extensión de VSCode, Thunder Client (ambas son útiles para el uso que les daremos en este caso).
 
-Al ser una API CRUD podremos crear libros, ver todos los libros guardados, actualizar atributos de los libros y borrarlos de ser necesario.
+Al ser una API CRUD podremos crear libros, ver todos los libros guardados, actualizar atributos de los libros y borrarlos de ser necesario. Hay que tener en cuenta que el proyecto usa la base de datos H2, que es una base en memoria y no deja los datos persistidos cuando se detiene la ejecución del proyecto, pero para este caso de prueba nos es útil.
 
 En el primer caso vamos a utilizar en nuestra aplicación de prueba el método GET en la ruta http://localhost:8080/api/books. De este modo vamos a obtener todos los libros que se encuentran guardados en nuestra base de datos.
 
